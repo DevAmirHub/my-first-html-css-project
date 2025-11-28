@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Vazir;
+}
+@font-face {
+    font-family: Vazir;
+    src: url(./Vazir.woff);
+  }
+body{
+    background-color: red;
+}
+.container{
+    width: 100%;
+    padding: 10px;
+}
+.first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start; 
+    margin-bottom: 0px;
+    padding: 0;
+    gap: 30px;
+}
+.h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    padding-right: 100px;
+    padding-top: 30px;
+   
+}
+img{
+    width: 250px;
+    height: 220px;
+}
+.second-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-left: 150px;
+    padding-top: 0;
+}
+.question{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.radio-button{
+    display: flex;
+    flex-direction: column;
+    padding-left: 350px;
+    gap: 10px;
+    color: #fff;
+}
+.button{
+    display: flex;
+    margin-left: 30px;
+  }
+
+.btn {
+    width: 180px;
+    height: 50px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+@media (max-width: 768px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+    .first-row {
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+    }
+}
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        padding-right: 0px;
+        padding-top: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .second-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .question{
+        font-size: 1rem;
+        direction: rtl;
+        color: #fff;
+        padding: 25px;
+    }
+}
+@media (max-width: 480px) {
+    .radio-button{
+        padding: 10px;
+        padding-left: 300px;
+        gap: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .button{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+}

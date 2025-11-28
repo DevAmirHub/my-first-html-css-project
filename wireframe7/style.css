@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Vazir;
+  }
+  
+  @font-face {
+    font-family: Vazir;
+    src: url(./Vazir.woff);
+  }
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #004892;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .title {
+    font-size: 4.5rem;
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    width: calc(25% - 20px);
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  
+  .button{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    width: 180px;
+    height: 50px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+  
+  .btn:hover {
+    color: #004892;
+    border-radius: 12px;
+    transition: all 0.2s linear;
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      justify-content: center;
+    }
+  
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      flex-direction: column;
+      justify-content: flex-start; 
+      align-items: flex-start; 
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 3rem; 
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .button{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .btn {
+      width: 100%;
+      height: 50px;
+      margin-top: 10px;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(800px); 
+    }
+    to {
+      transform: translateX(0); 
+    }
+  }
+  
+  .card-1 {
+    animation: slideIn 1s ease forwards; 
+  }
+  .card-2 {
+    animation: slideIn 2s ease forwards; 
+  }
+  .card-3 {
+    animation: slideIn 3s ease forwards; 
+  }
+  .card-4 {
+    animation: slideIn 4s ease forwards; 
+  }
+  
