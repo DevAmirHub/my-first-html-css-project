@@ -23,7 +23,7 @@ more dynamic stack.
   Vazir typeface.
 - No build tooling or package manager dependencies.
 
-## Getting started locally
+### Getting started locally
 
 1. Clone the repository or download the ZIP.
 2. Open `wireframe7/index.html` or `wireframe11/index2.html` directly in a
